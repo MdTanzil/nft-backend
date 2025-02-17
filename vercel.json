@@ -16,6 +16,10 @@
       "dest": "/",
 
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+    },
+    {
+      "src": "/api-docs/(.*)",
+      "dest": "/path-to-your-static-swagger-ui-assets/$1"
     }
   ]
 }
