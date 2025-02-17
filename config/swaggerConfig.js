@@ -10,7 +10,7 @@ const swaggerOptions = {
       description: "API for storing and retrieving NFT data",
     },
   },
-  apis: ["./routes/nftRoutes.js"], // Path to API route documentation
+  apis: [path.join(__dirname, "routes", "nftRoutes.js")], // Path to API route documentation edit here
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
